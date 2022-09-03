@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
 import { useVerk } from "./useVerk";
 import Verk from "./Verk";
+import Bio from "./Bio";
 import { SanityProvider } from "./SanityContext";
 
 function App() {
@@ -19,7 +20,12 @@ function App() {
       {" "}
       <SanityProvider>
         <QueryClientProvider client={queryClient}>
-          Hello world <Verk />
+          <Bio />
+          <p>
+            Velkommen til ElisbethBalstad.no, her vil det komme flere verk
+            etterhvert
+          </p>{" "}
+          <Verk />
         </QueryClientProvider>
       </SanityProvider>
     </div>
