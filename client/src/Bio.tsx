@@ -8,8 +8,8 @@ function Bio() {
       <div className="imgContainer">
         <img src={importImg} alt="import" className="bioImage" />
         <div className="topright">
-          Velkommen til ElisbethBalstad.no, her vil det komme flere verk
-          etterhvert
+          Velkommen til ElisabethBalstad.no, her kommer en visning av hennes
+          verk etterhvert.
         </div>
       </div>
     </>
