@@ -31,11 +31,20 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+.bioContainer {
+  position: relative;
+}
 .bioImage {
-  border-radius: 10%;
-  width: 1000px;
-  height: 800;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  filter: grayscale(100%);
+}
+.topright {
+  position: relative;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
 }
 
 .card {

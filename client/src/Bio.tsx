@@ -5,7 +5,13 @@ import importImg from "/src/assets/profilepicture.png";
 function Bio() {
   return (
     <>
-        <img src={importImg} alt="import" className="bioImage"></img>
+      <div className="imgContainer">
+        <img src={importImg} alt="import" className="bioImage" />
+        <div className="topright">
+          Velkommen til ElisbethBalstad.no, her vil det komme flere verk
+          etterhvert
+        </div>
+      </div>
     </>
   );
 }

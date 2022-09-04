@@ -20,12 +20,7 @@ function App() {
       {" "}
       <SanityProvider>
         <QueryClientProvider client={queryClient}>
-          <Bio />
-          <p>
-            Velkommen til ElisbethBalstad.no, her vil det komme flere verk
-            etterhvert
-          </p>{" "}
-          <Verk />
+          <Bio /> <Verk />
         </QueryClientProvider>
       </SanityProvider>
     </div>
