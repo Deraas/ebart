@@ -20,7 +20,8 @@ function App() {
       {" "}
       <SanityProvider>
         <QueryClientProvider client={queryClient}>
-          <Bio /> <Verk />
+          <Bio />
+          <Verk />
         </QueryClientProvider>
       </SanityProvider>
     </div>
