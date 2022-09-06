@@ -9,6 +9,14 @@ export default {
       type: "string",
     },
     {
+      name: "displaySwitch",
+      title: "Visning",
+      type: "boolean",
+      initialValue: false,
+      validation: (Rule) => Rule.required(),
+      description: "Skal verket vises på nettsiden",
+    },
+    {
       name: "title",
       title: "Biotittel",
       type: "string",

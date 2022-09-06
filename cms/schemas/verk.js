@@ -10,10 +10,30 @@ export default {
       description: "Identifikasjonskode på verk",
     },
     {
+      name: "displaySwitch",
+      title: "Visning",
+      type: "boolean",
+      initialValue: false,
+      validation: (Rule) => Rule.required(),
+      description: "Skal verket vises på nettsiden",
+    },
+    {
       name: "name",
       title: "Navn",
       type: "string",
       description: "Navn på verk",
+    },
+    {
+      name: "owner",
+      title: "Eier",
+      type: "string",
+      description: "Eier av verk",
+    },
+    {
+      name: "location",
+      title: "Lokasjon",
+      type: "string",
+      description: "Hvor er verket?",
     },
     {
       name: "hight",
@@ -26,12 +46,6 @@ export default {
       title: "Lengde",
       type: "number",
       description: "Lengde i cm",
-    },
-    {
-      name: "weigth",
-      title: "Vekt",
-      type: "number",
-      description: "Vekt i gram",
     },
     {
       name: "year",
