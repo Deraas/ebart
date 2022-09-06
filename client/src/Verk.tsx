@@ -5,13 +5,17 @@ import { useVerk } from "./useVerk";
 
 function Verk() {
   const { data } = useVerk();
-  console.log(data);
+  //console.log(data);
   if (!data) {
     return null;
   }
 
   return (
-    <div className="Verk"> {data.map((image: any) => console.log(image))}</div>
+    <div className="Verk">
+      {
+        //data.map((image: any) => console.log(image))
+      }
+    </div>
   );
 }
 

@@ -1,16 +1,24 @@
 import React from "react";
 import "./App.css";
 import importImg from "/src/assets/profilepicture.png";
+import { useBio } from "./useBio";
 
 function Bio() {
+  const { data } = useBio();
+  console.log(data);
+  if (!data) {
+    return null;
+  }
+
   return (
     <>
       <div className="imgContainer">
-        <img src={importImg} alt="import" className="bioImage" />
-        <div className="topright">
-          Velkommen til ElisabethBalstad.no, her kommer en visning av hennes
-          verk etterhvert.
-        </div>
+        <img
+          src={data.map((bio: any) => bio.imageUrl)}
+          alt="import"
+          className="bioImage"
+        />
+        <div className="topright">{data.map((bio: any) => bio.text)}</div>
       </div>
     </>
   );
