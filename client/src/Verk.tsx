@@ -6,7 +6,13 @@ import { useVerk } from "./useVerk";
 function Verk() {
   const { data } = useVerk();
   console.log(data);
-  return <div className="Verk"></div>;
+  if (!data) {
+    return null;
+  }
+
+  return (
+    <div className="Verk"> {data.map((image: any) => console.log(image))}</div>
+  );
 }
 
 export default Verk;
