@@ -12,9 +12,9 @@ function Bio() {
 
   return (
     <>
-      <div className="imgContainer">
+      <div className="bioContainer">
         <img
-          src={data.map((bio: any) => bio.imageUrl)}
+          src={data.map((bio: any) => bio.imageUrl + "?w=1000&fit=scale")}
           alt="import"
           className="bioImage"
         />

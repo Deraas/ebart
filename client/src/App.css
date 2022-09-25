@@ -54,3 +54,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.galleri {
+  margin-top: 50px;
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-self: center;
+}
+
+.verk {
+  width: 300px;
+  height: fit-content;
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+}
+.verk.img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
