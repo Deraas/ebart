@@ -13,12 +13,12 @@ function Bio() {
   return (
     <>
       <div className="bioContainer">
+        <div className="bioText">{data.map((bio: any) => bio.text)}</div>
         <img
           src={data.map((bio: any) => bio.imageUrl + "?w=1000&fit=scale")}
           alt="import"
           className="bioImage"
         />
-        <div className="topright">{data.map((bio: any) => bio.text)}</div>
       </div>
     </>
   );
