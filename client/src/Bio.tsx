@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import importImg from "/src/assets/profilepicture.png";
 import { useBio } from "./useBio";
 
 function Bio() {
