@@ -62,23 +62,42 @@
 
 .galleri {
   margin-top: 50px;
-  max-width: max-content;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  align-self: center;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.galleri .column {
+  flex: 25%;
+  max-width: 25%;
+}
 
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  grid-template-rows: masonry;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .verk {
   width: 300px;
   height: fit-content;
-  margin: 15px;
+  margin: 5px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
+}
+.verk.p {
+  margin-top: 3px;
+  font-size: small;
 }
 .verk.img {
   object-fit: cover;
