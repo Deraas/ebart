@@ -31,14 +31,14 @@ function Verk() {
               <img
                 src={image.croppedImageUrl + scalingOptions}
                 alt="import"
-                onMouseOver={(e) =>
-                  (e.currentTarget.src = image.landscapeImageUrl
-                    ? image.landscapeImageUrl + scalingOptions
-                    : image.croppedImageUrl + scalingOptions)
-                } //TODO: Must be dynamically cropped and fit same scale as cropped image url
-                onMouseOut={(e) =>
-                  (e.currentTarget.src = image.croppedImageUrl + scalingOptions)
-                }
+                // onMouseOver={(e) =>
+                //   (e.currentTarget.src = image.landscapeImageUrl
+                //     ? image.landscapeImageUrl + scalingOptions
+                //     : image.croppedImageUrl + scalingOptions)
+                // } //TODO: Must be dynamically cropped and fit same scale as cropped image url
+                // onMouseOut={(e) =>
+                //   (e.currentTarget.src = image.croppedImageUrl + scalingOptions)
+                // }
               ></img>
               <div className="verktittel">{image.name}</div>
               <div className="verktekst">
