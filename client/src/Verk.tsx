@@ -40,9 +40,14 @@ function Verk() {
                 //   (e.currentTarget.src = image.croppedImageUrl + scalingOptions)
                 // }
               ></img>
-              <div className="verktittel">{image.name}</div>
+              <div className="verktittel">
+                {image.name} <span className="year">{image.year}</span>
+              </div>
               <div className="verktekst">
-                {image.hight}x{image.length}cm
+                <span className="dimentions">
+                  {image.hight}x{image.length}cm{" "}
+                </span>
+                <span className="technique">{image.technique}</span>
               </div>
             </div>
           ))}
