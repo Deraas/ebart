@@ -29,10 +29,21 @@ function Verk() {
           {column.map((image: any) => (
             <div className="verk" key={image.verkkode}>
               <img
-                src={image.croppedImageUrl + "?w=300&fit=scale"}
+                src={image.croppedImageUrl + "?w=600&fit=scale"}
                 alt="import"
+                // onMouseOver={(e) =>
+                //   (e.currentTarget.src =
+                //     image.landscapeImageUrl + "?h=300&fit=scale")
+                // } //TODO: Must be dynamically cropped and fit same scale as cropped image url
+                // onMouseOut={(e) =>
+                //   (e.currentTarget.src =
+                //     image.croppedImageUrl + "?h=300&fit=scale")
+                // }
               ></img>
-              <p>{image.name}</p>
+              <div className="verktittel">{image.name}</div>
+              <div className="verktekst">
+                {image.hight}x{image.length}cm
+              </div>
             </div>
           ))}
         </div>
@@ -42,11 +53,3 @@ function Verk() {
 }
 
 export default Verk;
-
-// onMouseOver={(e) =>
-//   ( e.currentTarget.src =
-//     image.landscapeImageUrl + "?h=300&fit=scale")
-// } //TODO: Must be dynamically cropped and fit same scale as cropped image url
-// onMouseOut={(e) =>
-//   (e.currentTarget.src = image.croppedImageUrl + "?h=300&fit=scale")
-//}
