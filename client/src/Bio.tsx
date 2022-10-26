@@ -20,6 +20,10 @@ function Bio() {
         <div className="bioTextContainer">
           <h2 className="bioTitle">{data.map((bio: any) => bio.title)}</h2>
           <div>{data.map((bio: any) => bio.text)}</div>
+          <a href="https://nkl.snl.no/Elisabeth_Balstad" target="blank">
+            {" "}
+            Histore og CV finner du her
+          </a>
         </div>
       </div>
     </>
