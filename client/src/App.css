@@ -122,7 +122,8 @@
 }
 
 .year {
-  margin-left: 20px;
+  float: right;
+  margin-right: 15px;
   font-weight: lighter;
 }
 
