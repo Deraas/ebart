@@ -121,8 +121,24 @@
   font-weight: bold;
 }
 
+.year {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
 .verktekst {
   margin-top: 1px;
   margin-bottom: 15px;
   font-size: small;
+  white-space: pre-wrap;
+}
+
+.dimention {
+  float: left;
+  margin-top: 2px;
+  display: block;
+}
+.technique {
+  display: block;
+  margin-top: 1px;
 }
