@@ -143,3 +143,33 @@
   display: block;
   margin-top: 1px;
 }
+.dialog {
+  position: relative;
+  z-index: 50;
+}
+.verkbg {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.verkcontainer {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.verkdialog {
+  width: 50%;
+  max-width: 24rem;
+  border-radius: 0.25rem;
+  background-color: white;
+}

@@ -4,6 +4,7 @@ import "./App.css";
 import { useVerk } from "./useVerk";
 import Galleri from "./Galleri";
 import Bio from "./Bio";
+import Verk from "./Verk";
 import { SanityProvider } from "./SanityContext";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <QueryClientProvider client={queryClient}>
           <Bio />
           <Galleri />
+          <Verk />
         </QueryClientProvider>
       </SanityProvider>
     </div>

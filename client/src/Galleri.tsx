@@ -24,8 +24,8 @@ function Galleri() {
 
   return (
     <div className="galleri">
-      {columns.map((column: any) => (
-        <div className="column">
+      {columns.map((column: any, index: number) => (
+        <div className="column" key={"column" + index}>
           {column.map((image: any) => (
             <div className="verk" key={image.verkkode}>
               <img
