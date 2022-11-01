@@ -13,7 +13,7 @@ function split(array: any, arraycount: number) {
   return res;
 }
 
-function Verk() {
+function Galleri() {
   const { data } = useVerk();
   const scalingOptions = "?w=800&fit=scale";
   //console.log(data);
@@ -57,4 +57,4 @@ function Verk() {
   );
 }
 
-export default Verk;
+export default Galleri;
