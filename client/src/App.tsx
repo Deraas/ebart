@@ -23,7 +23,6 @@ function App() {
         <QueryClientProvider client={queryClient}>
           <Bio />
           <Galleri />
-          <Verk />
         </QueryClientProvider>
       </SanityProvider>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useVerk } from "./useVerk";
+import Verk from "./Verk";
 
 function split(array: any, arraycount: number) {
   let n = Math.round(array.length / arraycount);
@@ -15,8 +16,7 @@ function split(array: any, arraycount: number) {
 
 function Galleri() {
   const { data } = useVerk();
-  const scalingOptions = "?w=800&fit=scale";
-  //console.log(data);
+
   if (!data) {
     return null;
   }
@@ -26,31 +26,11 @@ function Galleri() {
     <div className="galleri">
       {columns.map((column: any, index: number) => (
         <div className="column" key={"column" + index}>
-          {column.map((image: any) => (
-            <div className="verk" key={image.verkkode}>
-              <img
-                src={image.croppedImageUrl + scalingOptions}
-                alt="import"
-                // onMouseOver={(e) =>
-                //   (e.currentTarget.src = image.landscapeImageUrl
-                //     ? image.landscapeImageUrl + scalingOptions
-                //     : image.croppedImageUrl + scalingOptions)
-                // } //TODO: Must be dynamically cropped and fit same scale as cropped image url
-                // onMouseOut={(e) =>
-                //   (e.currentTarget.src = image.croppedImageUrl + scalingOptions)
-                // }
-              ></img>
-              <div className="verktittel">
-                {image.name} <span className="year">{image.year}</span>
-              </div>
-              <div className="verktekst">
-                <span className="dimentions">
-                  {image.hight}x{image.length}cm{" "}
-                </span>
-                <span className="technique">{image.technique}</span>
-              </div>
-            </div>
-          ))}
+          {column.map((image: any) => {
+            console.log(image, "HALLOIS");
+
+            return <Verk image={image} key={image.verkkode} />;
+          })}
         </div>
       ))}
     </div>
