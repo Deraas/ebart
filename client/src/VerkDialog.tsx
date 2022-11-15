@@ -10,7 +10,7 @@ function VerkDialog(props: {
   image: any;
 }) {
   const { isOpen, setIsOpen } = props;
-  const scalingOptions = "?w=800&fit=scale";
+  const scalingOptions = "?w=1000&fit=scale";
   const image = props.image;
 
   return (
@@ -22,13 +22,19 @@ function VerkDialog(props: {
         {/* Full-screen container to center the panel */}
         <div className="verkcontainer">
           <Dialog.Panel className={"verkdialog"}>
-            <img
-              src={image.croppedImageUrl + scalingOptions}
-              alt="import"
-            ></img>
-            <Dialog.Title> </Dialog.Title>
-            <Dialog.Description>
-              This will permanently deactivate your account
+            <Dialog.Title className={"tittel"}>
+              {image.name} <span className="year">{image.year}</span>
+            </Dialog.Title>
+
+            <Dialog.Description className={"description"}>
+              <img
+                src={image.croppedImageUrl + scalingOptions}
+                alt="import"
+                className="main"
+              ></img>
+              <div className="dimentions">
+                {image.hight}x{image.length}cm{" "}
+              </div>
             </Dialog.Description>
 
             <p></p>
