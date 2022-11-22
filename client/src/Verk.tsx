@@ -10,8 +10,6 @@ const Verk = (props: { image: any }) => {
   const [isOpen, setIsOpen] = useState(false);
   const scalingOptions = "?w=800&fit=scale";
 
-  console.log(image, "Halla");
-
   return (
     <div className="verk" onClick={() => setIsOpen(true)}>
       <img src={image.croppedImageUrl + scalingOptions} alt="import"></img>

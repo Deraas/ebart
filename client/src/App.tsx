@@ -6,6 +6,7 @@ import Galleri from "./Galleri";
 import Bio from "./Bio";
 import Verk from "./Verk";
 import { SanityProvider } from "./SanityContext";
+import { inject } from "@vercel/analytics";
 
 function App() {
   const queryClient = new QueryClient({
@@ -15,6 +16,8 @@ function App() {
       },
     },
   });
+
+  inject();
 
   return (
     <div className="App">
