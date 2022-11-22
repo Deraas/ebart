@@ -2,8 +2,9 @@ import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
 import { useVerk } from "./useVerk";
-import Verk from "./Verk";
+import Galleri from "./Galleri";
 import Bio from "./Bio";
+import Verk from "./Verk";
 import { SanityProvider } from "./SanityContext";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <SanityProvider>
         <QueryClientProvider client={queryClient}>
           <Bio />
-          <Verk />
+          <Galleri />
         </QueryClientProvider>
       </SanityProvider>
     </div>
