@@ -106,12 +106,8 @@
 }
 
 .verk img {
-  object-fit: cover;
-  max-width: fit-content;
   width: 100%;
-  height: auto;
   vertical-align: middle;
-  border-radius: 5px;
 }
 
 .verktittel {
