@@ -42,7 +42,7 @@
 }
 .bioTextContainer {
   position: absolute;
-  height: 50%;
+  height: auto;
   width: 30%;
   top: 45px;
   right: 20px;
